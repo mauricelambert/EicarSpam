@@ -262,6 +262,18 @@ int main() {
 
 ## F#
 
+### Linux
+
+#### Download executable
+
+```bash
+curl -o EicarSpam_fsharp_Linux.zip "https://objects.githubusercontent.com/github-production-release-asset-2e65be/470340204/bb93d9b2-e6a8-41fa-a489-16ffe71ffb27?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20220319%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220319T160736Z&X-Amz-Expires=300&X-Amz-Signature=aff09d23f04c7f76b1a471c4b10ca829ce80b2c01f7fe8890a389fe21837eebf&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=470340204&response-content-disposition=attachment%3B%20filename%3DEicarSpam_fsharp_Linux.zip&response-content-type=application%2Foctet-stream"
+unzip EicarSpam_fsharp_Linux.zip
+cd EicarSpam_fsharp_Linux
+chmod +x EicarSpam
+./EicarSpam
+```
+
 ### Compile
 
 ```bash
@@ -301,6 +313,16 @@ for i = 1 to 300 do
 ```
 
 ## Rust
+
+### Linux
+
+#### Download executable
+
+```bash
+curl -o EicarSpam_rust_Linux "https://objects.githubusercontent.com/github-production-release-asset-2e65be/470340204/70c67674-6cff-4e71-86ea-73dba509468d?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20220319%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220319T161424Z&X-Amz-Expires=300&X-Amz-Signature=f049be0260737dbe0ba2e9de3beb2c7abf7b4a8df81fa87e16ff24fe1f46f5c3&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=470340204&response-content-disposition=attachment%3B%20filename%3DEicarSpam_rust_Linux&response-content-type=application%2Foctet-stream"
+chmod +x EicarSpam_rust_Linux
+./EicarSpam_rust_Linux
+```
 
 ### Compile
 
