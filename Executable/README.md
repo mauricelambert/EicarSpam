@@ -1,25 +1,16 @@
-# Tests antivirus
+# EicarSpam Executables
 
-Small programs to test your antivirus with eicar strings (create 300 eicar strings in 300 files).
+Cross-platform executables to test your antivirus software with multiple Eicar files, and different ways to use it.
 
-Sources are available here and executables are available [here](https://github.com/mauricelambert/EicarSpam/releases/latest/)
+ - Sources are available on my [Github](https://github.com/mauricelambert/EicarSpam/tree/main/Executable)
+ - Binary files are available in [Github releases](https://github.com/mauricelambert/EicarSpam/releases/latest/) and [SourceForge files](https://sourceforge.net/projects/eicarspam/files/Executables/)
 
- - Go
- - Rust
- - F#
- - C
+1) Go
+2) Rust
+3) F#
+4) C
 
 ## Go
-
-### Linux
-
-#### Start execution with command line
-
-```bash
-curl -o EicarSpam_go "https://objects.githubusercontent.com/github-production-release-asset-2e65be/470340204/d14fa6c1-7685-4c75-992d-d840d2726209?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20220316%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220316T103304Z&X-Amz-Expires=300&X-Amz-Signature=dc572c25a04a593f666fe1556130f552ad93f631a91698ba40230dbf9c7e519d&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=470340204&response-content-disposition=attachment%3B%20filename%3DEicarSpam_go_Linux&response-content-type=application%2Foctet-stream"
-chmod +x EicarSpam_go
-./EicarSpam_go
-```
 
 ### Compile
 
@@ -28,7 +19,7 @@ go build EicarSpam.go
 ./EicarSpam
 ```
 
-### Code
+### Sources
 
 ```go
 package main
@@ -63,16 +54,6 @@ func main() {
 ```
 
 ## C
-
-### Linux
-
-#### Start execution with command line
-
-```bash
-curl -o EicarSpam_c "https://objects.githubusercontent.com/github-production-release-asset-2e65be/470340204/1ec8cbc3-64bd-40f8-b403-839b11002280?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20220316%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220316T101859Z&X-Amz-Expires=300&X-Amz-Signature=0201848ead42c88ee07095a2b056891ea0dcd1fcb0ba7c74b849049b0c4d100a&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=470340204&response-content-disposition=attachment%3B%20filename%3DEicarSpam_c_Linux&response-content-type=application%2Foctet-stream"
-chmod +x EicarSpam_c
-./EicarSpam_c
-```
 
 ### Compile
 
@@ -116,18 +97,6 @@ int main() {
 
 ## F#
 
-### Linux
-
-#### Start execution with command line
-
-```bash
-curl -o EicarSpam_fsharp_Linux.zip "https://objects.githubusercontent.com/github-production-release-asset-2e65be/470340204/bb93d9b2-e6a8-41fa-a489-16ffe71ffb27?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20220319%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220319T160736Z&X-Amz-Expires=300&X-Amz-Signature=aff09d23f04c7f76b1a471c4b10ca829ce80b2c01f7fe8890a389fe21837eebf&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=470340204&response-content-disposition=attachment%3B%20filename%3DEicarSpam_fsharp_Linux.zip&response-content-type=application%2Foctet-stream"
-unzip EicarSpam_fsharp_Linux.zip
-cd EicarSpam_fsharp_Linux
-chmod +x EicarSpam
-./EicarSpam
-```
-
 ### Compile
 
 ```bash
@@ -167,16 +136,6 @@ for i = 1 to 300 do
 ```
 
 ## Rust
-
-### Linux
-
-#### Start execution with command line
-
-```bash
-curl -o EicarSpam_rust_Linux "https://objects.githubusercontent.com/github-production-release-asset-2e65be/470340204/70c67674-6cff-4e71-86ea-73dba509468d?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20220319%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220319T161424Z&X-Amz-Expires=300&X-Amz-Signature=f049be0260737dbe0ba2e9de3beb2c7abf7b4a8df81fa87e16ff24fe1f46f5c3&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=470340204&response-content-disposition=attachment%3B%20filename%3DEicarSpam_rust_Linux&response-content-type=application%2Foctet-stream"
-chmod +x EicarSpam_rust_Linux
-./EicarSpam_rust_Linux
-```
 
 ### Compile
 

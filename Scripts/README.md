@@ -1,27 +1,34 @@
-# Tests antivirus
+# EicarSpam Scripts
 
-Small scripts and programs to test your antivirus with eicar strings (create 300 eicar strings in 300 files).
+Cross-platform scripts to test your antivirus software with multiple Eicar files, and different ways to use it.
+
+ - Scripts are available on my [Github](https://github.com/mauricelambert/EicarSpam/tree/main/Scripts)
+ - Scripts are available on [SourceForge files](https://sourceforge.net/projects/eicarspam/files/Scripts)
 
 1) Windows (without any installation)
- - Batch script: Windows XP - Windows 11/2022
- - VBScript script: Windows XP - Windows 11/2022
- - JScript script: Windows XP - Windows 11/2022
- - Powershell script: Windows 7 - Windows11/2022
+    - Batch script: Windows XP - Windows 11/2022
+    - VBScript script: Windows XP - Windows 11/2022
+    - JScript script: Windows XP - Windows 11/2022
+    - Powershell script: Windows 7 - Windows11/2022
 2) Linux (without any installation)
- - Bash
+    - Bash
 3) Linux (probably no installation)
- - Perl
- - Python
+    - Perl
+    - Python
 4) Others
- - Ruby
+    - Ruby
 
 All these scripts work on Windows 10, Debian sid and CentOS 7, some requirements might be required.
 
 ## Python
 
+### Usages
+
 ```bash
 python3 EicarSpam.py
 ```
+
+### Sources
 
 ```python
 for a in range(300):
@@ -29,11 +36,19 @@ for a in range(300):
         _ = f.write("X5O!P%@AP[4\\PZX54(P^)7CC)7}$_!$H+H*".replace("_", "EICAR-STANDARD-ANTIVIRUS-TEST-FILE"))
 ```
 
+### Link
+
+[SourceForge](https://sourceforge.net/projects/eicarspam/files/Scripts/EicarSpam.py/download)
+
 ## Powershell
+
+### Usages
 
 ```bash
 powershell ./EicarSpam.ps1
 ```
+
+### Sources
 
 ```powershell
 $string = 'X5O!P%@AP[4\PZX54(P^)7CC)7}$_!$H+H*'.replace('_', 'EICAR-STANDARD-ANTIVIRUS-TEST-FILE')
@@ -43,11 +58,19 @@ for($i = 0; $i -lt 300; $i++){
 }
 ```
 
+### Link
+
+[SourceForge](https://sourceforge.net/projects/eicarspam/files/Scripts/EicarSpam.ps1/download)
+
 ## Bash
+
+### Usages
 
 ```bash
 bash EicarSpam.sh
 ```
+
+### Sources
 
 ```bash
 a='X5O!P%@AP[4\PZX54(P^)7CC)7}$_!$H+H*'
@@ -60,11 +83,19 @@ done
 echo 'X5O!P%@AP[4\PZX54(P^)7CC)7}$'"EICAR-STANDARD-ANTIVIRUS-TEST-FILE"'!$H+H*' > "test.txt"
 ```
 
+### Link
+
+[SourceForge](https://sourceforge.net/projects/eicarspam/files/Scripts/EicarSpam.sh/download)
+
 ## VBScript
 
+### Usages
+
 ```bash
-EicarSpam.vbs
+cscript EicarSpam.vbs
 ```
+
+### Sources
 
 ```vbscript
 part1 = "X5O!P%@AP[4\PZX54(P^)7CC)7}$"
@@ -78,11 +109,19 @@ For i = 1 To 300
 Next
 ```
 
+### Link
+
+[SourceForge](https://sourceforge.net/projects/eicarspam/files/Scripts/EicarSpam.vbs/download)
+
 ## JScript
 
+### Usages
+
 ```bash
-EicarSpam.js
+cscript EicarSpam.js
 ```
+
+### Sources
 
 ```js
 var part1;
@@ -102,11 +141,19 @@ for (i = 0; i < 300; i++) {
 }
 ```
 
+### Link
+
+[SourceForge](https://sourceforge.net/projects/eicarspam/files/Scripts/EicarSpam.js/download)
+
 ## Batch
+
+### Usages
 
 ```bash
 EicarSpam.bat
 ```
+
+### Sources
 
 ```bash
 @echo off
@@ -117,11 +164,19 @@ SET b=EICAR-STANDARD-ANTIVIRUS-TEST-FILE
 for /L %D in (1,1,300) do echo %a%%b%%c% > test%D.txt
 ```
 
+### Link
+
+[SourceForge](https://sourceforge.net/projects/eicarspam/files/Scripts/EicarSpam.bat/download)
+
 ## Ruby
+
+### Usages
 
 ```bash
 ruby EicarSpam.rb
 ```
+
+### Sources
 
 ```rb
 300.times {
@@ -133,11 +188,19 @@ ruby EicarSpam.rb
 }
 ```
 
+### Link
+
+[SourceForge](https://sourceforge.net/projects/eicarspam/files/Scripts/EicarSpam.rb/download)
+
 ## Perl
+
+### Usages
 
 ```bash
 perl EicarSpam.pl
 ```
+
+### Sources
 
 ```perl
 foreach my $i ((1..300)) {
@@ -147,3 +210,7 @@ foreach my $i ((1..300)) {
 	close $file;
 }
 ```
+
+### Link
+
+[SourceForge](https://sourceforge.net/projects/eicarspam/files/Scripts/EicarSpam.pl/download)
