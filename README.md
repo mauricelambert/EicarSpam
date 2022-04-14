@@ -70,6 +70,8 @@ Cross-platform scripts, executables, DLLs and modules to test your antivirus sof
 
  - C Go
  - C Python
+ - Cython (python syntax)
+ - Cython
  - C Ruby
 
 ### Links
@@ -78,7 +80,9 @@ Cross-platform scripts, executables, DLLs and modules to test your antivirus sof
 2) [Bin - Github](https://github.com/mauricelambert/EicarSpam/releases/latest/)
 3) SourceForge C Go: [Windows](https://sourceforge.net/projects/eicarspam/files/Modules/EicarSpam_cgo_Windows.exe/download), [Linux](https://sourceforge.net/projects/eicarspam/files/Modules/EicarSpam_cgo_Linux/download)
 4) SourceForge C Python: [Windows](https://sourceforge.net/projects/eicarspam/files/Modules/EicarSpam.cp310-win_amd64.pyd/download), [Linux](https://sourceforge.net/projects/eicarspam/files/Modules/EicarSpam.cpython-39-x86_64-linux-gnu.so/download)
-5) SourceForge C Ruby: [Windows](https://sourceforge.net/projects/eicarspam/files/Modules/EicarSpam.ruby-3.1.1-x64-mingw-ucrt.so/download), [Linux](https://sourceforge.net/projects/eicarspam/files/Modules/EicarSpam.ruby-2.7.4-x86_64-linux-gnu.so/download)
+5) SourceForge Cython (python syntax): [Windows](https://sourceforge.net/projects/eicarspam/files/Modules/pyeicar.cp39-win_amd64.pyd/download), [Linux](https://sourceforge.net/projects/eicarspam/files/Modules/pyeicar.cpython-39-x86_64-linux-gnu.so/download)
+6) SourceForge Cython: [Windows](https://sourceforge.net/projects/eicarspam/files/Modules/cyeicar.cp39-win_amd64.pyd/download), [Linux](https://sourceforge.net/projects/eicarspam/files/Modules/cyeicar.cpython-39-x86_64-linux-gnu.so/download)
+7) SourceForge C Ruby: [Windows](https://sourceforge.net/projects/eicarspam/files/Modules/EicarSpam.ruby-3.1.1-x64-mingw-ucrt.so/download), [Linux](https://sourceforge.net/projects/eicarspam/files/Modules/EicarSpam.ruby-2.7.4-x86_64-linux-gnu.so/download)
 
 ## Licence
 

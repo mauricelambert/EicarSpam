@@ -7,7 +7,9 @@ Cross-platform modules to test your antivirus software with multiple Eicar files
 
 1) Go
 2) Python
-3) Ruby
+3) Cython (python syntax)
+4) Cython
+5) Ruby
 
 ## Go
 
@@ -123,7 +125,73 @@ if __name__ == "__main__":
 python3 setup.py build_ext --inplace
 ```
 
-### Ruby
+## Cython
+
+```python
+from setuptools import setup
+from Cython.Build import cythonize
+
+setup(
+    ext_modules=cythonize(
+        [
+             'pyeicar.py',
+            'cyeicar.pyx',
+        ],
+        annotate=True,
+    ),
+)
+```
+
+```bash
+python setup.py build_ext --inplace
+```
+
+### Cython (python syntax)
+
+```
+import cython
+
+def eicar(number: cython.int) -> None:
+
+    """
+    This function writes <number> eicar file.
+    """
+
+    data = b"%(start)s%(text)s%(end)s" % {
+        b"end": b"!$H+H*",
+        b"start": b"X5O!P%@AP[4\\PZX54(P^)7CC)7}$",
+        b"text": b"EICAR-STANDARD-ANTIVIRUS-TEST-FILE",
+    }
+
+    while number > 0:
+        number -= 1
+
+        with open(f"test{number}.txt", "wb") as file:
+            file.write(data)
+
+    return None
+```
+
+### Cython (cython syntax)
+
+```cython
+def eicar(int number):
+    cdef char data[68]
+
+    data = b"%(start)s%(text)s!$H+H*" % {
+        b"text": b"EICAR-STANDARD-ANTIVIRUS-TEST-FILE",
+        b"start": b"X5O!P%@AP[4\\PZX54(P^)7CC)7}$",
+    }
+
+    for i in range(number):
+        file = open(f"test{i}.txt", 'wb')
+        file.write(data)
+        file.close()
+
+    return None
+```
+
+## Ruby
 
 ```c
 #include "ruby.h"
