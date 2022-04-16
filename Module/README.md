@@ -148,7 +148,7 @@ python setup.py build_ext --inplace
 
 ### Cython (python syntax)
 
-```
+```python
 import cython
 
 def eicar(number: cython.int) -> None:
