@@ -9,6 +9,7 @@ Cross-platform executables to test your antivirus software with multiple Eicar f
 2) Rust
 3) F#
 4) C
+5) Nim
 
 ## Go
 
@@ -163,4 +164,21 @@ fn main() -> std::io::Result<()> {
 
     Ok(())
 }
+```
+
+## Nim
+
+### Compile
+
+```bash
+nim c -r --stackTrace:off --lineTrace:off --lineDir:off EicarSpam.nim
+```
+
+### Sources
+
+```nim
+var part1: string = "X5O!P%@AP[4\\PZX54(P^)7CC)7}$"
+part1.add("EICAR-STANDARD-ANTIVIRUS-TEST-FILE")
+for i in 1 .. 300:
+    writeFile("eicar" & $i & ".txt", part1 & "!$H+H*")
 ```
