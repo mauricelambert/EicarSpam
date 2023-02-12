@@ -13,6 +13,7 @@ Cross-platform scripts, executables, DLLs and modules to test your antivirus sof
  - Rust
  - C
  - F#
+ - Nim
 
 ### Links
 
@@ -22,6 +23,7 @@ Cross-platform scripts, executables, DLLs and modules to test your antivirus sof
 4) SourceForge Rust: [Windows](https://sourceforge.net/projects/eicarspam/files/Executables/EicarSpam_rust_Windows.exe/download), [Linux](https://sourceforge.net/projects/eicarspam/files/Executables/EicarSpam_rust_Linux/download)
 5) SourceForge C: [Windows](https://sourceforge.net/projects/eicarspam/files/Executables/EicarSpam_c_Windows.exe/download), [Linux](https://sourceforge.net/projects/eicarspam/files/Executables/EicarSpam_c_Linux/download)
 6) SourceForge F#: [Windows](https://sourceforge.net/projects/eicarspam/files/Executables/EicarSpam_fsharp_Windows.zip/download), [Linux](https://sourceforge.net/projects/eicarspam/files/Executables/EicarSpam_fsharp_Linux.zip/download)
+7) SourceForge Nim: [Windows](https://sourceforge.net/projects/eicarspam/files/Executables/EicarSpam_nim_Windows.zip/download), [Linux](https://sourceforge.net/projects/eicarspam/files/Executables/EicarSpam_nim_Linux.zip/download)
 
 ## Scripts
 
