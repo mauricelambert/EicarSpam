@@ -31,7 +31,7 @@ from ctypes import cdll as sysdll
 filename = "EicarSpam.so"
 
 from os.path import abspath
-eicarspam = sysdll.LoadLibrary(abspath("EicarSpam.dll"))
+eicarspam = sysdll.LoadLibrary(abspath(filename))
 eicarspam.eicar(300)
 ```
 
