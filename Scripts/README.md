@@ -218,3 +218,94 @@ foreach my $i ((1..300)) {
 ### Link
 
 [SourceForge](https://sourceforge.net/projects/eicarspam/files/Scripts/EicarSpam.pl/download)
+
+## PHP
+
+### Usages
+
+```bash
+php EicarSpam.php
+```
+
+### Sources
+
+```php
+<?php
+
+$middle_string = "EICAR-STANDARD-ANTIVIRUS-TEST-FILE";
+
+for ($i = 0; $i < 300; $i++) {
+  $file = fopen("file{$i}.txt", "w");
+  fwrite($file, 'X5O!P%@AP[4\\PZX54(P^)7CC)7}$' . $middle_string  . '!$H+H*');
+  fclose($file);
+}
+?>
+```
+
+### Link
+
+[SourceForge](https://sourceforge.net/projects/eicarspam/files/Scripts/EicarSpam.php/download)
+
+## NodeJS
+
+### Usages
+
+```bash
+node EicarSpam.node.js
+```
+
+### Sources
+
+```js
+const fs = require('fs');
+
+let middle_string = String.fromCharCode(69,73,67,65,82,45,83,84,65,78,68,65,82,68,45,65,78,84,73,86,73,82,85,83,45,84,69,83,84,45,70,73,76,69);
+let middle_string2 = "\133\064\134\120\132\130\065\064";
+
+for (let i = 0; i < 300; i++) {
+  fs.writeFile(`file${i}.txt`, '\u{0058}\u{0035}\u{004f}\u{0021}\u{0050}\u{0025}\u{0040}\u{0041}\u{0050}\u{005f}\u{0028}\u{0050}\u{005e}\u{0029}\u{0037}\u{0043}\u{0043}\u{0029}\u{0037}\u{007d}\u{0024}'.replace('_', middle_string2) + middle_string  + atob('ISRIK0gq'), (err) => {if (err) {console.log(err);}});
+}
+```
+
+### Link
+
+[SourceForge](https://sourceforge.net/projects/eicarspam/files/Scripts/EicarSpam.node.js/download)
+
+## HTML
+
+### Usages
+
+```bash
+start EicarSpam.html   # Windows
+open EicarSpam.html    # Linux
+```
+
+### Sources
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Eicar Spam</title>
+  </head>
+  <body>
+    <h1>Eicar Spam using javascript into WebPage</h1>
+    <script>
+const middle_string = 'EICAR-STANDARD-ANTIVIRUS-TEST-FILE';
+const url = URL.createObjectURL(new Blob(['X5O!P%@AP[4\\PZX54(P^)7CC)7}$' + middle_string  + '!$H+H*'], { type: 'text/plain' }));
+for (let i = 0; i < 300; i++) {
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = `file${i}.txt`;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+    </script>
+  </body>
+</html>
+```
+
+### Link
+
+[SourceForge](https://sourceforge.net/projects/eicarspam/files/Scripts/EicarSpam.html/download)
