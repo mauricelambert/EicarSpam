@@ -5,18 +5,22 @@ Cross-platform scripts to test your antivirus software with multiple Eicar files
  - Scripts are available on my [Github](https://github.com/mauricelambert/EicarSpam/tree/main/Scripts)
  - Scripts are available on [SourceForge files](https://sourceforge.net/projects/eicarspam/files/Scripts)
 
-1) Windows (without any installation)
+1) Web
+    - HTML (javascript)
+2) Windows (without any installation)
     - Batch script: Windows XP - Windows 11/2022
     - VBScript script: Windows XP - Windows 11/2022
     - JScript script: Windows XP - Windows 11/2022
     - Powershell script: Windows 7 - Windows11/2022
-2) Linux (without any installation)
+3) Linux (without any installation)
     - Bash
-3) Linux (probably no installation)
+4) Linux (probably no installation)
     - Perl
     - Python
-4) Others
+5) Others
     - Ruby
+    - Nodejs
+    - PHP
 
 All these scripts work on Windows 10, Debian sid and CentOS 7, some requirements might be required.
 
