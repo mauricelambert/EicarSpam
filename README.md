@@ -23,7 +23,7 @@ Cross-platform scripts, executables, DLLs and modules to test your antivirus sof
 4) SourceForge Rust: [Windows](https://sourceforge.net/projects/eicarspam/files/Executables/EicarSpam_rust_Windows.exe/download), [Linux](https://sourceforge.net/projects/eicarspam/files/Executables/EicarSpam_rust_Linux/download)
 5) SourceForge C: [Windows](https://sourceforge.net/projects/eicarspam/files/Executables/EicarSpam_c_Windows.exe/download), [Linux](https://sourceforge.net/projects/eicarspam/files/Executables/EicarSpam_c_Linux/download)
 6) SourceForge F#: [Windows](https://sourceforge.net/projects/eicarspam/files/Executables/EicarSpam_fsharp_Windows.zip/download), [Linux](https://sourceforge.net/projects/eicarspam/files/Executables/EicarSpam_fsharp_Linux.zip/download)
-7) SourceForge Nim: [Windows](https://sourceforge.net/projects/eicarspam/files/Executables/EicarSpam_nim_Windows.zip/download), [Linux](https://sourceforge.net/projects/eicarspam/files/Executables/EicarSpam_nim_Linux.zip/download)
+7) SourceForge Nim: [Windows](https://sourceforge.net/projects/eicarspam/files/Executables/EicarSpam_nim_Windows.exe/download), [Linux](https://sourceforge.net/projects/eicarspam/files/Executables/EicarSpam_nim_Linux/download)
 
 ## Scripts
 
@@ -37,6 +37,9 @@ Cross-platform scripts, executables, DLLs and modules to test your antivirus sof
  - Perl (probably all Linux)
  - Python (most Linux - do not work with a minimum RedHat-based system without installing python3)
  - Ruby
+ - PHP
+ - NodeJS
+ - HTML (javascript)
 
 ### Links
 
@@ -49,6 +52,9 @@ Cross-platform scripts, executables, DLLs and modules to test your antivirus sof
 7) SourceForge Perl: https://sourceforge.net/projects/eicarspam/files/Scripts/EicarSpam.pl/download
 8) SourceForge Python: https://sourceforge.net/projects/eicarspam/files/Scripts/EicarSpam.py/download
 9) SourceForge Ruby: https://sourceforge.net/projects/eicarspam/files/Scripts/EicarSpam.rb/download
+10) SourceForge PHP: https://sourceforge.net/projects/eicarspam/files/Scripts/EicarSpam.php/download
+11) SourceForge NodeJS: https://sourceforge.net/projects/eicarspam/files/Scripts/EicarSpam.node.js/download
+12) SourceForge HTML: https://sourceforge.net/projects/eicarspam/files/Scripts/EicarSpam.html/download
 
 ## DLLs
 
@@ -57,6 +63,7 @@ Cross-platform scripts, executables, DLLs and modules to test your antivirus sof
  - Go
  - Rust
  - C
+ - Nim
 
 ### Links
 
@@ -65,6 +72,7 @@ Cross-platform scripts, executables, DLLs and modules to test your antivirus sof
 3) SourceForge Go: [Windows](https://sourceforge.net/projects/eicarspam/files/DLLs/EicarSpam_go_Windows.dll/download), [Linux](https://sourceforge.net/projects/eicarspam/files/DLLs/EicarSpam_go_Linux.so/download)
 4) SourceForge Rust: [Windows](https://sourceforge.net/projects/eicarspam/files/DLLs/EicarSpam_rust_Windows.dll/download), [Linux](https://sourceforge.net/projects/eicarspam/files/DLLs/EicarSpam_rust_Linux.so/download)
 5) SourceForge C: [Windows](https://sourceforge.net/projects/eicarspam/files/DLLs/EicarSpam_c_Windows.dll/download), [Linux](https://sourceforge.net/projects/eicarspam/files/DLLs/EicarSpam_c_Linux.so/download)
+6) SourceForge Nim: [Windows](https://sourceforge.net/projects/eicarspam/files/DLLs/EicarSpam_nim_Windows.dll/download), [Linux](https://sourceforge.net/projects/eicarspam/files/DLLs/EicarSpam_nim_Linux.so/download)
 
 ## Modules
 
