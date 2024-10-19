@@ -3,7 +3,7 @@
 Cross-platform DLLs to test your antivirus software with multiple Eicar files, and different ways to use it.
 
  - Sources are available on my [Github](https://github.com/mauricelambert/EicarSpam/tree/main/DLL)
- - Binary files are available in [Github releases](https://github.com/mauricelambert/EicarSpam/releases/latest/) and [SourceForge files](https://sourceforge.net/projects/eicarspam/files/DLLs/)
+ - Binary files are available in [Github releases](https://github.com/mauricelambert/EicarSpam/releases/) and [SourceForge files](https://sourceforge.net/projects/eicarspam/files/DLLs/)
 
 1) How to use DLLs
     - Python
