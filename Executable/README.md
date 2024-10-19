@@ -3,7 +3,7 @@
 Cross-platform executables to test your antivirus software with multiple Eicar files, and different ways to use it.
 
  - Sources are available on my [Github](https://github.com/mauricelambert/EicarSpam/tree/main/Executable)
- - Binary files are available in [Github releases](https://github.com/mauricelambert/EicarSpam/releases/latest/) and [SourceForge files](https://sourceforge.net/projects/eicarspam/files/Executables/)
+ - Binary files are available in [Github releases](https://github.com/mauricelambert/EicarSpam/releases/) and [SourceForge files](https://sourceforge.net/projects/eicarspam/files/Executables/)
 
 1) Go
 2) Rust
@@ -11,6 +11,9 @@ Cross-platform executables to test your antivirus software with multiple Eicar f
 4) C
 5) Nim
 6) ASM Linux
+7) Zig
+8) Vala
+9) Pony
 
 ## Go
 
@@ -188,7 +191,7 @@ for i in 1 .. 300:
 
 ### Compile
 
-```
+```bash
 nasm -felf64 EicarSpam_Linux.asm
 ld EicarSpam_Linux.o -o EicarSpam_Linux
 ```
@@ -261,4 +264,91 @@ section .data
     eicarstring db 75, 40, 66, 20, 67, 24, 51, 52, 67, 78, 39, 79, 67, 77, 75, 40, 39, 27, 67, 81, 28, 42, 54, 54, 28, 42, 112, 23, 56, 60, 54, 52, 69, 32, 70, 71, 52, 65, 55, 52, 69, 55, 32, 52, 65, 71, 60, 73, 60, 69, 72, 70, 32, 71, 56, 70, 71, 32, 57, 60, 63, 56, 20, 23, 59, 30, 59, 29, 0
     filename db 'file000.txt'
     len equ $-filename
+```
+
+## Zig
+
+### Compile
+
+```bash
+zig-linux-x86_64-0.14.0-dev.1917+ecd5878b7/zig build-exe -O ReleaseSafe EicarSpam.zig
+zig-linux-x86_64-0.14.0-dev.1917+ecd5878b7/zig build-exe -fstrip -fsingle-threaded -target x86_64-windows -O ReleaseFast  EicarSpam.zig
+zig-linux-x86_64-0.14.0-dev.1917+ecd5878b7/zig build-exe -fstrip -fsingle-threaded -target x86_64-linux   -O ReleaseSmall EicarSpam.zig
+```
+
+### Sources
+
+```zig
+const std = @import("std");
+
+pub fn main() !void {
+    const allocator = std.heap.page_allocator;
+
+    const part2 = "!$H+H*";
+    const part1 = "X5O!P%@AP[4\\PZX54(P^)7CC)7}$";
+    const eicar = try std.fmt.allocPrint(allocator, "{s}EICAR-STANDARD-ANTIVIRUS-TEST-FILE{s}", .{part1, part2});
+    
+    var i: u32 = 0;
+    while (i < 300) : (i += 1) {
+        const filename = try std.fmt.allocPrint(allocator, "file_{}.txt", .{i+1});
+        defer allocator.free(filename);
+        
+        var file = try std.fs.cwd().createFile(filename, .{});
+        defer file.close();
+        
+        _ = try file.write(eicar);
+    }
+}
+```
+
+## Vala
+
+### Compile
+
+```bash
+valac --Xcc="-O3" --pkg glib-2.0 --pkg gobject-2.0 EicarSpam.vala
+```
+
+### Sources
+
+```zig
+void main() {
+    string part2 = "!$H+H*\0";
+    string part1 = "X5O!P%@AP[4\\PZX54(P^)7CC)7}$";
+    string eicar = part1 + "EICAR-STANDARD-ANTIVIRUS-TEST-FILE" + part2;
+    for (int i = 1; i <= 300; i++) {
+        string file_name = "file_" + i.to_string() + ".txt";
+        FileStream fs = FileStream.open(file_name, "w");
+        fs.write(eicar.data, 1);
+    }
+}
+```
+
+## Pony
+
+### Compile
+
+```bash
+ponyc -b EicarSpam .
+```
+
+### Sources
+
+```zig
+use "files"
+use "collections"
+actor Main
+  new create(env: Env) =>
+    let part2 = "!$H+H*"
+    let part1 = "X5O!P%@AP[4\\PZX54(P^)7CC)7}$"
+    let eicar: String box = part1 + "EICAR-STANDARD-ANTIVIRUS-TEST-FILE" + part2
+    for i in Range[U32](1, 301) do
+      let filename: String val = "file" + i.string() + ".txt"
+      let caps = recover val FileCaps + FileCreate + FileWrite + FileRead + FileStat end
+      let file_path = FilePath(FileAuth(env.root), filename, caps)
+      let file = File.create(file_path)
+      file.write(eicar)
+      file.flush()
+      file.dispose()
+    end
 ```
